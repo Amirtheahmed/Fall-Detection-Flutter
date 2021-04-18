@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Proje',
+      title: 'Düşme tespit Proje',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -40,8 +40,6 @@ class _MyHomePageState extends State<MyHomePage> {
   double _fall_value = 0;
   SmsSender sender = SmsSender();
   String acil_numara = "+905550026195";
-  String _message;
-  String _address;
   bool isConnected;
 
   void onMessage(List<MqttReceivedMessage<MqttMessage>> event) {
